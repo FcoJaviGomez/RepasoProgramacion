@@ -107,6 +107,35 @@ let arr1: string[] = ["Casa", "Coche", "Ciudad", "Cesta"]
 let arr2: string[] = ["Barco", "Baca", "Bicicleta", "Balon", "Bisiesto", "Brasil"]
 let arr3: string[] = ["Venezuela", "Veneno", "Voltaje"]
 
+
+
+
+function parOImpar(palabras: string[]) {
+    let total: number = 0
+    for (let i = 0; i < palabras.length; i++) {
+
+        total += palabras[i].length
+
+    }
+
+    if (total % 2 == 0) {
+        console.log("El numero es par");
+
+    }
+    else {
+        console.log("El numero es impar");
+    }
+}
+
+parOImpar(arr1)
+parOImpar(arr2)
+parOImpar(arr3)
+
+
+
+
+
+
 // function sumaDeCara(palabras: string[]) {
 //     let total: number = 0
 //     for (let i = 0; i < palabras.length; i++) {
@@ -119,27 +148,27 @@ let arr3: string[] = ["Venezuela", "Veneno", "Voltaje"]
 
 // }
 
-function parImpar(numero: number) {
+// function parImpar(numero: number) {
 
-    if (numero % 2 == 0) {
-        console.log("El numero es par");
+//     if (numero % 2 == 0) {
+//         console.log("El numero es par");
 
-    }
-    else {
-        console.log("El numero es impar");
-    }
-}
-let resultado1: number
-resultado1 = sumaDeCara(arr1)
-console.log(sumaDeCara(arr1));
-parImpar(resultado1)
+//     }
+//     else {
+//         console.log("El numero es impar");
+//     }
+// }
+// let resultado1: number
+// resultado1 = sumaDeCara(arr1)
+// console.log(sumaDeCara(arr1));
+// parImpar(resultado1)
 
-let resultado2: number
-resultado2 = sumaDeCara(arr2)
-console.log(sumaDeCara(arr2));
-parImpar(resultado2)
+// let resultado2: number
+// resultado2 = sumaDeCara(arr2)
+// console.log(sumaDeCara(arr2));
+// parImpar(resultado2)
 
-let resultado3: number
-resultado3 = sumaDeCara(arr3)
-console.log(sumaDeCara(arr3));
-parImpar(resultado3)
+// let resultado3: number
+// resultado3 = sumaDeCara(arr3)
+// console.log(sumaDeCara(arr3));
+// parImpar(resultado3)
